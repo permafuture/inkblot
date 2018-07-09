@@ -38,16 +38,16 @@ const Anchor = styled(OutgoingLink)`
 `;
 
 function Footer() {
-    const tweet = `Elevate your product with`;
+    const siteDescription
+        = `Digital Psychology – a free library of psychological principles`
+        + ` and examples for inspiration to enhance the customer experience and`
+        + ` influence your user's behavior`;
 
     return (
         <Root>
             <Container>
                 <Info>
-                    {`Digital Psychology – a free library of psychological principles
-                    and examples for inspiration to enhance the customer experience and
-                    influence your user's behavior. `}
-                    Brought to you by{' '}
+                    {siteDescription}. Brought to you by{' '}
                     <OutgoingLink to={`https://nolt.io?utm_source=partner&utm_campaign=digitalpsychology`}>
                         Nolt
                     </OutgoingLink>.
@@ -62,7 +62,7 @@ function Footer() {
                     <li>
                         <Anchor
                             to={`http://twitter.com/share?text=${encodeURIComponent(
-                                tweet
+                                siteDescription
                             )}&url=http://digitalpsychology.io`}>
                             {`Share on Twitter`}
                         </Anchor>
