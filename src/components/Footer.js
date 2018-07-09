@@ -25,7 +25,7 @@ const Root = styled.div`
     }
 
     a {
-        ${linkStyle}
+        ${linkStyle};
     }
 `;
 
@@ -34,10 +34,10 @@ const Info = styled.div`
 `;
 
 const Anchor = styled(OutgoingLink)`
-    ${fonts.heading}
+    ${fonts.heading};
 `;
 
-function Footer(props) {
+function Footer() {
     const tweet = `Elevate your product with`;
 
     return (
@@ -47,8 +47,10 @@ function Footer(props) {
                     {`Digital Psychology – a free library of psychological principles
                     and examples for inspiration to enhance the customer experience and
                     influence your user's behavior. `}
-
-                    Written by <OutgoingLink to={`https://twitter.com/${props.twitterHandle}`}>Daniel Stefanovic</OutgoingLink>.
+                    Brought to you by{' '}
+                    <OutgoingLink to={`https://nolt.io?utm_source=partner&utm_campaign=digitalpsychology`}>
+                        Nolt
+                    </OutgoingLink>.
                 </Info>
 
                 <ul>
@@ -58,7 +60,10 @@ function Footer(props) {
                         </Anchor>
                     </li>
                     <li>
-                        <Anchor to={`http://twitter.com/share?text=${encodeURIComponent(tweet)}&url=http://digitalpsychology.io`}>
+                        <Anchor
+                            to={`http://twitter.com/share?text=${encodeURIComponent(
+                                tweet
+                            )}&url=http://digitalpsychology.io`}>
                             {`Share on Twitter`}
                         </Anchor>
                     </li>
