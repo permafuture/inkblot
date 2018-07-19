@@ -48,7 +48,7 @@ function Footer() {
             <Container>
                 <Info>
                     {siteDescription}. Brought to you by{' '}
-                    <OutgoingLink to={`https://nolt.io?utm_source=partner&utm_campaign=digitalpsychology`}>
+                    <OutgoingLink to={`https://nolt.io?utm_source=partner&utm_medium=referral&utm_campaign=digitalpsychology`}>
                         Nolt
                     </OutgoingLink>.
                 </Info>
