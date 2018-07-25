@@ -37,7 +37,7 @@ const Anchor = styled(OutgoingLink)`
     ${fonts.heading};
 `;
 
-function Footer() {
+function Footer(props) {
     const siteDescription
         = `Digital Psychology – a free library of psychological principles`
         + ` and examples for inspiration to enhance the customer experience and`
