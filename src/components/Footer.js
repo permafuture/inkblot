@@ -47,10 +47,7 @@ function Footer() {
         <Root>
             <Container>
                 <Info>
-                    {siteDescription}. Brought to you by{' '}
-                    <OutgoingLink to={`https://nolt.io?utm_source=partner&utm_medium=referral&utm_campaign=digitalpsychology`}>
-                        Nolt
-                    </OutgoingLink>.
+                    {siteDescription}. Written by <OutgoingLink to={`https://twitter.com/${props.twitterHandle}`}>Daniel Stefanovic</OutgoingLink>.
                 </Info>
 
                 <ul>
