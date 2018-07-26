@@ -47,7 +47,10 @@ function Footer(props) {
         <Root>
             <Container>
                 <Info>
-                    {siteDescription}. Written by <OutgoingLink to={`https://twitter.com/${props.twitterHandle}`}>Daniel Stefanovic</OutgoingLink>.
+                    {siteDescription}. Written by{' '}
+                    <OutgoingLink to={`https://twitter.com/${props.twitterHandle}`}>
+                        Daniel Stefanovic
+                    </OutgoingLink>.
                 </Info>
 
                 <ul>
@@ -63,6 +66,9 @@ function Footer(props) {
                             )}&url=http://digitalpsychology.io`}>
                             {`Share on Twitter`}
                         </Anchor>
+                    </li>
+                    <li>
+                        <Anchor to="https://www.producthunt.com/posts/digital-psychology">{`View on ProductHunt`}</Anchor>
                     </li>
                 </ul>
             </Container>
