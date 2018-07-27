@@ -8,7 +8,7 @@ const Root = styled.header`
     display: flex;
     flex: 0 0 auto;
     overflow: hidden;
-    padding: 2rem;
+    padding: 1rem 2rem;
 
     @media (max-width: 699px) {
         border-bottom: 1px solid ${colors.border};
@@ -18,6 +18,7 @@ const Root = styled.header`
         border-right: 1px solid ${colors.border};
         height: 100vh;
         width: 100px;
+        padding: 2rem;
     }
 `;
 
@@ -34,16 +35,14 @@ const Title = styled.h1`
 `;
 
 const Anchor = styled(Link)`
-    color: ${colors.heading}
+    color: ${colors.heading};
 `;
 
 function Header() {
     return (
         <Root>
             <Title>
-                <Anchor to="/">
-                    {`Digital Psychology`}
-                </Anchor>
+                <Anchor to="/">{`Digital Psychology`}</Anchor>
             </Title>
         </Root>
     );

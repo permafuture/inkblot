@@ -6,8 +6,8 @@ import { colors } from '../css/variables';
 
 const Root = styled.div`
     position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: calc(0.5rem + 1px);
+    right: 2rem;
 
     @media (min-width: 700px) {
         top: 2.5rem;
