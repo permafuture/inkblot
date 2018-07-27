@@ -25,7 +25,8 @@ function Template(props) {
     // would not trigger a scroll to top
     const Main = styled.div`
         flex: 1;
-        overflow: auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     `;
 
     return (
