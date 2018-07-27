@@ -67,9 +67,6 @@ function Footer(props) {
                             {`Share on Twitter`}
                         </Anchor>
                     </li>
-                    <li>
-                        <Anchor to="https://www.producthunt.com/posts/digital-psychology">{`View on ProductHunt`}</Anchor>
-                    </li>
                 </ul>
             </Container>
         </Root>
