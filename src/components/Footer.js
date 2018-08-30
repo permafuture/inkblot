@@ -39,18 +39,18 @@ const Anchor = styled(OutgoingLink)`
 
 function Footer(props) {
     const siteDescription
-        = `Digital Psychology – a free library of psychological principles`
-        + ` and examples for inspiration to enhance the customer experience and`
-        + ` connect with your users`;
+        = `Organic Books – the bookstore in Nob Hill`;
 
     return (
         <Root>
             <Container>
                 <Info>
-                    {siteDescription}. Written by{' '}
-                    <OutgoingLink to={`https://twitter.com/${props.twitterHandle}`}>
-                        Daniel Stefanovic
-                    </OutgoingLink>.
+                    {siteDescription} |
+                    &copy; 2018 <br />
+                    Site built by{' '}
+                    <OutgoingLink to={`https://permafuture.net  `}>
+                        Max Brewer
+                    </OutgoingLink> with open-source technologies.
                 </Info>
 
                 <ul>
@@ -63,7 +63,7 @@ function Footer(props) {
                         <Anchor
                             to={`http://twitter.com/share?text=${encodeURIComponent(
                                 siteDescription
-                            )}&url=http://digitalpsychology.io`}>
+                            )}&url=http://organicbooks.cool`}>
                             {`Share on Twitter`}
                         </Anchor>
                     </li>

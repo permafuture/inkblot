@@ -1,13 +1,12 @@
 module.exports = {
     pathPrefix: `/`,
     siteMetadata: {
-        author: `Daniel Stefanovic`,
-        description: `A free library of psychological principles and examples`
-            + ` to elevate your SaaS, e-commerce or other digital products.`,
+        author: `Organic Books`,
+        description: `The bookstore in Nob Hill`,
         facebookAppId: `310591556081648`,
-        siteUrl: `http://digitalpsychology.io`,
-        title: `Digital Psychology`,
-        twitterHandle: `danistefanovic`
+        siteUrl: `http://organicbooks.cool`,
+        title: `Organic Books`,
+        twitterHandle: `organicbooksabq`
     },
     plugins: [
         {
@@ -41,8 +40,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Digital Psychology`,
-                short_name: `Digital Psychology`, // eslint-disable-line camelcase
+                name: `Organic Books`,
+                short_name: `Organic Books`, // eslint-disable-line camelcase
                 start_url: `/?utm_source=homescreen`, // eslint-disable-line camelcase
                 background_color: `#ffffff`, // eslint-disable-line camelcase
                 theme_color: `#ffffff`, // eslint-disable-line camelcase

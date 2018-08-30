@@ -5,8 +5,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors, fonts, sizes } from '../css/variables';
-import convertRaster from '../utils/convertRaster';
-import Raster from './Raster';
 
 const Root = styled.ul`
     padding: 0;
@@ -16,7 +14,7 @@ const Root = styled.ul`
 
 const Item = styled(Link)`
     ${fonts.heading}
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     position: relative;
     display: flex;
@@ -26,8 +24,10 @@ const Item = styled(Link)`
     padding: 1rem ${sizes.xl};
 
     figure {
+        ${fonts.symbol}
+        font-size: 15rem;
         position: absolute;
-        top: -9vw;
+        top: -10vw;
         right: ${sizes.xl};
         margin: 0;
         opacity: 0;
@@ -43,7 +43,7 @@ const Item = styled(Link)`
     }
 
     &:hover figure {
-        opacity: 1;
+        opacity: 1; // changed this til i fix the image loading for PatternList
     }
 `;
 
@@ -52,6 +52,7 @@ const Index = styled.span`
     color: ${colors.textWeak};
     display: inline-block;
     margin-right: 2rem;
+    font-style: italic;
 `;
 
 const Title = styled.span`
@@ -66,11 +67,8 @@ function PatternList(props) {
             {props.items.map((item, index) => (
                 <li key={index}>
                     <Item to={item.path}>
-                        <figure>
-                            <Raster points={convertRaster(20, item.image)} size={20} />
-                        </figure>
-
-                        <Index>{leftPad(index + 1, 3, '0')}</Index>
+                        <figure>{leftPad(index + 1, 1, '0')}</figure>
+                        <Index>{leftPad(index + 1, 1, '0')}</Index>
                         <Title>{item.title}</Title>
                     </Item>
                 </li>

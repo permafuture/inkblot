@@ -8,27 +8,27 @@ import { colors, fonts } from './variables';
 
 // eslint-disable-next-line no-unused-expressions
 injectGlobal`
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        src:
-            local('Roboto Light'),
-            local('Roboto-Light'),
-            url(${robotoWoff2}) format('woff2'),
-            url(${robotoWoff}) format('woff');
-    }
-
-    @font-face {
-        font-family: 'Roboto Mono';
-        font-style: normal;
-        font-weight: 500;
-        src:
-            local('Roboto Mono Medium'),
-            local('RobotoMono-Medium'),
-            url(${robotoMonoWoff2}) format('woff2'),
-            url(${robotoMonoWoff}) format('woff');
-    }
+    // @font-face {
+    //     font-family: 'Roboto';
+    //     font-style: normal;
+    //     font-weight: 300;
+    //     src:
+    //         local('Roboto Light'),
+    //         local('Roboto-Light'),
+    //         url(${robotoWoff2}) format('woff2'),
+    //         url(${robotoWoff}) format('woff');
+    // }
+    //
+    // @font-face {
+    //     font-family: 'Roboto Mono';
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     src:
+    //         local('Roboto Mono Medium'),
+    //         local('RobotoMono-Medium'),
+    //         url(${robotoMonoWoff2}) format('woff2'),
+    //         url(${robotoMonoWoff}) format('woff');
+    // }
 
     * {
         box-sizing: border-box;

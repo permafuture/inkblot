@@ -58,7 +58,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                         path: edge.node.fields.path,
                         component: post,
                         context: {
-                            path: edge.node.fields.path,
                             slug: edge.node.fields.slug
                         }
                     });

@@ -1,22 +1,26 @@
 export const colors = {
-    bg: '#fff',
-    border: '#eaeaea',
-    heading: '#000',
+    bg: '#fefefe',
+    border: '#aaaaaa',
+    heading: '#111',
     highlight: '#f8f8f8',
-    text: '#666',
-    textWeak: '#ccc'
+    text: '#222',
+    textWeak: '#dc322f'
 };
 
 export const fonts = {
     heading: `
-        font-family: 'Roboto mono', monospace;
+        font-family: 'Prata', serif;
         font-weight: 500;
         color: ${colors.heading};
         letter-spacing: 1px;
     `,
     text: `
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Jejumyeongjo', sans-serif;
         font-weight: 300;
+        color: ${colors.text};
+    `,
+    symbol: `
+        font-family: 'WC Rhesus A Bta', 'Prata', serif;
         color: ${colors.text};
     `
 };

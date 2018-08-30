@@ -1,5 +1,5 @@
-# digitalpsychology.io
-This is the source code for the [digitalpsychology.io](http://digitalpsychology.io/) website.
+# organicbooks.cool
+This is the source code for the [organicbooks.cool](http://organicbooks.cool/) website.
 
 ## What's inside?
 * [Gatsby](https://www.gatsbyjs.org/)

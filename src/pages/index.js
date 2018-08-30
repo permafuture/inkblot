@@ -46,7 +46,7 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             filter: { frontmatter: { draft: { ne: true } } }
-            sort: { fields: [fields___slug] }
+            sort: { fields: [frontmatter___chapter] }
         ) {
             edges {
                 node {

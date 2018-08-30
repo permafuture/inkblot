@@ -11,11 +11,11 @@ const Root = styled.header`
     padding: 1rem 2rem;
 
     @media (max-width: 699px) {
-        border-bottom: 1px solid ${colors.border};
+        border-bottom: 1.1px solid ${colors.border};
     }
 
     @media (min-width: 700px) {
-        border-right: 1px solid ${colors.border};
+        border-right: 1.1px solid ${colors.border};
         height: 100vh;
         width: 100px;
         padding: 2rem;
@@ -23,14 +23,14 @@ const Root = styled.header`
 `;
 
 const Title = styled.h1`
-    font-size: 1rem;
+    font-family: Prata;
+    font-size: 2rem;
     letter-spacing: 1px;
     margin: 0;
-    transform-origin: top left;
-    white-space: nowrap;
 
     @media (min-width: 700px) {
-        transform: rotate(-90deg) translateX(-100%);
+        writing-mode: sideways-lr;
+        text-align: right;
     }
 `;
 
@@ -38,11 +38,12 @@ const Anchor = styled(Link)`
     color: ${colors.heading};
 `;
 
+
 function Header() {
     return (
         <Root>
             <Title>
-                <Anchor to="/">{`Digital Psychology`}</Anchor>
+                <Anchor to="/">{`Organic Books`}</Anchor>
             </Title>
         </Root>
     );
