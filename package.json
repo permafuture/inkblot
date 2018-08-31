@@ -5,7 +5,6 @@
   "author": "Organic Books <mapsimaginary@gmail.com>",
   "scripts": {
     "build": "gatsby build",
-    "clean": "rm -rf public/ && rm -rf .cache/ ",
     "lint": "eslint ./",
     "prod": "http-server ./public",
     "start": "gatsby develop"
