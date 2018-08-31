@@ -1,35 +1,21 @@
 import { injectGlobal } from 'styled-components';
 
-import robotoWoff from './fonts/roboto-latin-300.woff';
-import robotoWoff2 from './fonts/roboto-latin-300.woff2';
-import robotoMonoWoff from './fonts/roboto-mono-latin-500.woff';
-import robotoMonoWoff2 from './fonts/roboto-mono-latin-500.woff2';
+import wcrhesus from './fonts/WC_Rhesus_A_Bta-webfont.woff';
 import { colors, fonts } from './variables';
 
 // eslint-disable-next-line no-unused-expressions
 injectGlobal`
+
     // @font-face {
-    //     font-family: 'Roboto';
+    //     font-family: 'WC Rhesus A Bta';
     //     font-style: normal;
-    //     font-weight: 300;
     //     src:
-    //         local('Roboto Light'),
-    //         local('Roboto-Light'),
-    //         url(${robotoWoff2}) format('woff2'),
-    //         url(${robotoWoff}) format('woff');
-    // }
-    //
-    // @font-face {
-    //     font-family: 'Roboto Mono';
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     src:
-    //         local('Roboto Mono Medium'),
-    //         local('RobotoMono-Medium'),
-    //         url(${robotoMonoWoff2}) format('woff2'),
-    //         url(${robotoMonoWoff}) format('woff');
+    //         local('WC Rhesus A Bta'),
+    //         url(${wcrhesus}) format('woff');
     // }
 
+    @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+    @import url('https://fonts.googleapis.com/css?family=Prata');
     * {
         box-sizing: border-box;
     }
@@ -60,7 +46,7 @@ injectGlobal`
 
     h1 {
         font-size: 3rem;
-        margin: 0 0 2.5rem;
+        margin: 0 0 2rem;
         line-height: 1.2;
     }
 
@@ -82,6 +68,7 @@ injectGlobal`
 
     a {
         text-decoration: none;
+
     }
 
     strong {

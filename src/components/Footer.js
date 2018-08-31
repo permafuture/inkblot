@@ -30,7 +30,7 @@ const Root = styled.div`
 `;
 
 const Info = styled.div`
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 `;
 
 const Anchor = styled(OutgoingLink)`
@@ -55,8 +55,8 @@ function Footer(props) {
 
                 <ul>
                     <li>
-                        <Anchor to="http://bit.ly/digital-psychology-updates">
-                            {`Subscribe to updates`}
+                        <Anchor to="http://tinyletter.com/sciops">
+                            {`Subscribe to our newsletter`}
                         </Anchor>
                     </li>
                     <li>

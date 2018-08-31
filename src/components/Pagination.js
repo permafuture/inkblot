@@ -10,7 +10,7 @@ const Root = styled.div`
     right: 2rem;
 
     @media (min-width: 700px) {
-        top: 2.5rem;
+        top: 13vw;
         right: 2.5rem;
     }
 `;
@@ -21,7 +21,7 @@ const Anchor = styled(Link)`
     padding: 0.25rem 0.5rem;
 
     &:hover {
-        color: ${colors.text};
+        color: ${colors.textWeak};
     }
 `;
 

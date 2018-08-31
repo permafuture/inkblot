@@ -35,7 +35,6 @@ export const linkStyle = `
     color: ${colors.heading};
 
     &:hover {
-        background-color: ${colors.heading};
-        color: #fff;
+        color: ${colors.textWeak};
     }
 `;

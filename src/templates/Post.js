@@ -36,7 +36,7 @@ function Post(props) {
                 type="article"
                 url={meta.siteUrl + post.fields.path} />
             <Pagination next={nextPath} previous={previousPath} />
-            <PostContent content={post.html} title={post.frontmatter.title} />
+            <PostContent content={post.html} longtitle={post.frontmatter.longtitle} />
             <NextPost title={nextTitle} to={nextPath} />
         </div>
     );
@@ -64,6 +64,7 @@ export const pageQuery = graphql`
                 slug
             }
             frontmatter {
+                longtitle
                 datePublished
                 title
                 seoImage {
