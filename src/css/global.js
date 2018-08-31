@@ -1,6 +1,7 @@
 import { injectGlobal } from 'styled-components';
 
-import wcrhesus from './fonts/WC_Rhesus_A_Bta-webfont.woff';
+import wcrhesus from './fonts/WC-Rhesus-A-Bta-webfont.woff';
+
 import { colors, fonts } from './variables';
 
 // eslint-disable-next-line no-unused-expressions
